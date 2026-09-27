@@ -23,3 +23,19 @@ Este repositório contém um clone da página inicial do DuckDuckGo, desenvolvid
   - Identificadas as imagens que ainda faltam adicionar: `lupa.png`, `navegador.png`,
     `duck-ai.svg` e `escudo.svg`. Definido o tamanho de referência de cada uma
     (ícones pequenos como SVG, ícones de card em ~128×128 px para telas retina).
+
+  - **Dia 3:** definição de todas as variáveis do projeto no bloco :root.
+Paleta de cores: 8 cores base extraídas de uma paleta terrosa (Coffee 
+#371e13, Maroon 
+#5e2a25, Clay Dust 
+#c0aa8a, Creme 
+#e1d3a9, Leather Couch 
+#734f31, Deep Peach 
+#a85530, Guave 
+#8f7c3a, River Pine 
+#534831), escolhida para um tema escuro que substitui a paleta original do DuckDuckGo (item de personalização visual, já que o professor pediu que a aparência não fosse uma réplica do site de referência).
+Papéis atribuídos a cada cor: cada variável de cor base foi associada a uma função na página (fundo, texto principal, texto secundário, fundo dos cards, bordas, botões primário e secundário, selo, campos de formulário, foco de teclado), para que trocar a paleta inteira no futuro exija mexer só nesse bloco.
+Antes de decidir os papéis, foi feito um cálculo de contraste (WCAG) entre as cores da paleta, para garantir texto legível sobre os fundos escolhidos e evitar problemas de acessibilidade.
+Variáveis de tipografia e espaçamento: fonte base (pilha de fontes do sistema, system-ui), raio de borda padrão para cards e botões (12px) e espaçamento padrão entre seções (3rem), centralizando esses valores para reutilização em todo o CSS.
+Corrigido também um problema de nome de arquivo: Style.css (maiúsculo) estava commitado com nome diferente do usado no index.html, o que poderia impedir o CSS de carregar em sistemas que diferenciam maiúsculas de minúsculas. Renomeado para style.css com git mv.
+  
