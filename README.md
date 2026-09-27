@@ -71,3 +71,14 @@ Corrigido também um problema de nome de arquivo: Style.css (maiúsculo) estava 
   - Dois estilos de botão: `.botao` (secundário, cor mais discreta) e
     `.botao-destaque` (usa a cor de maior contraste), com efeito de brilho no
     `:hover`.
+
+     - Seção centralizada com largura máxima (`max-width: 40rem`), para o texto e o
+    formulário não ficarem esticados demais em telas largas.
+  - Formulário em `display: flex` com cada campo (`label` + `input`/`textarea`)
+    empilhado verticalmente, usando a cor de fundo dos campos (River Pine) definida
+    nas variáveis.
+  - Botão de enviar com `align-self: flex-start`, para não ocupar a largura toda,
+    e mesmo efeito de brilho no `:hover` usado nos outros botões, mantendo
+    consistência visual.
+  - Rodapé simples, centralizado, com texto em tom mais suave (Clay Dust) e uma
+    linha divisória no topo.
