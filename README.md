@@ -82,3 +82,12 @@ Corrigido também um problema de nome de arquivo: Style.css (maiúsculo) estava 
     consistência visual.
   - Rodapé simples, centralizado, com texto em tom mais suave (Clay Dust) e uma
     linha divisória no topo.
+
+  magens: substituídos os arquivos menu.png e Ia.png (ícone do Duck.ai), que estavam recortados com muita margem transparente ao redor do desenho, fazendo o ícone parecer pequeno mesmo com o tamanho definido no CSS. As novas versões têm o ícone ocupando melhor o espaço da imagem.
+  index.html:
+Corrigidos os caminhos (src) das imagens, que estavam sem o prefixo img/ e não apontavam mais para os arquivos reais dentro dessa pasta.
+Preenchidos os links (href) que ainda estavam como #: o logo e o link "Duck.ai" passaram a apontar para https://duckduckgo.com/ e https://duck.ai/, respectivamente; o botão "Predefinir como pesquisa" aponta para https://duckduckgo.com/settings; o botão "Transferir navegador" aponta para https://duckduckgo.com/windows. O link "Saiba mais sobre o desenvolvedor dessa página" continua como âncora interna (#desenvolvedor), já que não existe no site original.
+  style.css:
+Aumentado o ícone do menu de 24px para 32px (header nav button img).
+Ajustada a paleta de cores para reduzir o desconforto de sair do clone (tons terrosos quentes) para o site real (tons escuros mais neutros/frios) ao clicar nos links: o fundo geral da página (--cor-fundo) passou de Coffee para River Pine, um tom mais frio dentro da mesma paleta já escolhida — sem copiar as cores originais do DuckDuckGo, mantendo a personalização exigida.
+Como consequência dessa troca, o texto secundário do rodapé perderia contraste suficiente sobre o novo fundo; por isso o rodapé passou a ter fundo próprio (Maroon, a mesma cor dos cards), mantendo a legibilidade dentro do recomendado pelas diretrizes de contraste (WCAG).
