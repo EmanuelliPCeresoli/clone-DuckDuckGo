@@ -26,3 +26,58 @@
   --raio-borda: 12px;
   --espaco-secao: 3rem;
 }
+
+    *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+}
+ 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+    body {
+  font-family: var(--fonte-base);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.5;
+  font-size: 1rem;
+}
+ 
+h1,
+h2 {
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+ 
+h1 {
+  font-size: 1.75rem;
+}
+ 
+h2 {
+  font-size: 1.375rem;
+}
+ 
+p {
+  margin: 0 0 1rem;
+  max-width: 65ch;
+}
+ 
+a {
+  color: inherit;
+}
+ 
+/* Foco visível para navegação por teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 2px;
+}
