@@ -60,3 +60,14 @@ Corrigido também um problema de nome de arquivo: Style.css (maiúsculo) estava 
     (`:hover`) — outro exemplo de pseudo-classe usada no projeto.
   - Ícone do "Duck.ai" alinhado ao texto, e botão do menu (hambúrguer) estilizado
     sem fundo nem borda, só o ícone clicável.
+
+     Estilizada a seção de apresentação (título e cards).
+  - Título centralizado, com o ícone do escudo alinhado ao texto (`vertical-align: middle`).
+  - Cards em `display: flex` empilhados (coluna) por padrão em mobile — viram lado
+    a lado na media query de desktop —, com fundo, borda e cantos arredondados
+    usando as variáveis já definidas.
+  - Selo "A melhor privacidade" estilizado como pílula (borda bem arredondada),
+    com cor de destaque própria.
+  - Dois estilos de botão: `.botao` (secundário, cor mais discreta) e
+    `.botao-destaque` (usa a cor de maior contraste), com efeito de brilho no
+    `:hover`.
