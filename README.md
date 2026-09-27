@@ -38,4 +38,15 @@ Papéis atribuídos a cada cor: cada variável de cor base foi associada a uma f
 Antes de decidir os papéis, foi feito um cálculo de contraste (WCAG) entre as cores da paleta, para garantir texto legível sobre os fundos escolhidos e evitar problemas de acessibilidade.
 Variáveis de tipografia e espaçamento: fonte base (pilha de fontes do sistema, system-ui), raio de borda padrão para cards e botões (12px) e espaçamento padrão entre seções (3rem), centralizando esses valores para reutilização em todo o CSS.
 Corrigido também um problema de nome de arquivo: Style.css (maiúsculo) estava commitado com nome diferente do usado no index.html, o que poderia impedir o CSS de carregar em sistemas que diferenciam maiúsculas de minúsculas. Renomeado para style.css com git mv.
+
+ **Reset:** `box-sizing: border-box` em todos os elementos (facilita o cálculo de
+    padding/borda sem estourar larguras), remoção da margem padrão do `body`, e
+    imagens limitadas a `max-width: 100%` para não estourar o layout em telas menores.
+  - **Tipografia:** fonte, cor de fundo e cor de texto aplicadas ao `body` a partir
+    das variáveis já definidas; tamanhos de `h1` e `h2` definidos para mobile
+    (ajustados depois na media query de desktop); parágrafos com largura máxima de
+    `65ch` para manter linhas de texto confortáveis de ler; links herdando a cor do
+    texto ao redor, em vez do azul padrão do navegador.
+  - **Acessibilidade:** contorno (`outline`) visível ao navegar por teclado (Tab) em
+    links, botões e campos de formulário, usando a cor Guave como destaque de foco.
   
