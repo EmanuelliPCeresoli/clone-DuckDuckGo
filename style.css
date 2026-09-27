@@ -144,3 +144,67 @@ header nav button img {
   width: 24px;
   height: 24px;
 }
+
+.apresentacao {
+  padding: var(--espaco-secao) 1rem;
+  text-align: center;
+}
+ 
+.apresentacao h1 img {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+ 
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+ 
+.cards article {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  padding: 1.5rem;
+  text-align: left;
+  flex: 1;
+}
+ 
+.cards img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+ 
+.selo {
+  display: inline-block;
+  background-color: var(--cor-selo);
+  color: var(--cor-selo-texto);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+ 
+.botao {
+  display: inline-block;
+  background-color: var(--cor-botao-secundario);
+  color: var(--cor-texto);
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--raio-borda);
+  font-weight: bold;
+}
+ 
+.botao:hover {
+  filter: brightness(1.1);
+}
+ 
+.botao-destaque {
+  background-color: var(--cor-botao);
+  color: var(--cor-botao-texto);
+}

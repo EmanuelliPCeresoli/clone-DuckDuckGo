@@ -50,3 +50,13 @@ Corrigido também um problema de nome de arquivo: Style.css (maiúsculo) estava 
   - **Acessibilidade:** contorno (`outline`) visível ao navegar por teclado (Tab) em
     links, botões e campos de formulário, usando a cor Guave como destaque de foco.
   
+  - Estilizado o cabeçalho com Flexbox.
+  - `header` em `display: flex` com `justify-content: space-between`, colocando o
+    logo de um lado e a navegação do outro, e `flex-wrap: wrap` para não quebrar o
+    layout em telas muito estreitas.
+  - Logo com imagem e texto alinhados lado a lado (`.logo`), removendo o sublinhado
+    padrão do link.
+  - Links de navegação sem sublinhado por padrão, com sublinhado ao passar o mouse
+    (`:hover`) — outro exemplo de pseudo-classe usada no projeto.
+  - Ícone do "Duck.ai" alinhado ao texto, e botão do menu (hambúrguer) estilizado
+    sem fundo nem borda, só o ícone clicável.
