@@ -1,0 +1,28 @@
+:root {
+  --coffee: #371e13;
+  --maroon: #5e2a25;
+  --clay-dust: #c0aa8a;
+  --creme: #e1d3a9;
+  --leather-couch: #734f31;
+  --deep-peach: #a85530;
+  --guave: #8f7c3a;
+  --river-pine: #534831;
+
+  --cor-fundo: var(--coffee);
+  --cor-texto: var(--creme);
+  --cor-texto-suave: var(--clay-dust);
+  --cor-card: var(--maroon);
+  --cor-borda: var(--leather-couch);
+  --cor-botao: var(--creme);
+  --cor-botao-texto: var(--coffee);
+  --cor-botao-secundario: var(--leather-couch);
+  --cor-selo: var(--clay-dust);
+  --cor-selo-texto: var(--coffee);
+  --cor-campo: var(--river-pine);
+  --cor-destaque: var(--deep-peach);
+  --cor-foco: var(--guave);
+
+  --fonte-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --raio-borda: 12px;
+  --espaco-secao: 3rem;
+}
