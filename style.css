@@ -27,52 +27,52 @@
   --espaco-secao: 3rem;
 }
 
-    *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
 }
- 
+
 body {
   margin: 0;
 }
- 
+
 img {
   max-width: 100%;
   display: block;
 }
 
-    body {
+body {
   font-family: var(--fonte-base);
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
   line-height: 1.5;
   font-size: 1rem;
 }
- 
+
 h1,
 h2 {
   line-height: 1.2;
   margin: 0 0 1rem;
 }
- 
+
 h1 {
   font-size: 1.75rem;
 }
- 
+
 h2 {
   font-size: 1.375rem;
 }
- 
+
 p {
   margin: 0 0 1rem;
   max-width: 65ch;
 }
- 
+
 a {
   color: inherit;
 }
- 
+
 /* Foco visível para navegação por teclado */
 a:focus-visible,
 button:focus-visible,
@@ -91,7 +91,7 @@ header {
   padding: 1rem;
   border-bottom: 1px solid var(--cor-borda);
 }
- 
+
 .logo {
   display: flex;
   align-items: center;
@@ -100,46 +100,46 @@ header {
   font-weight: bold;
   color: var(--cor-texto);
 }
- 
+
 .logo img {
   width: 40px;
   height: 40px;
 }
- 
+
 header nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
 }
- 
+
 header nav a {
   text-decoration: none;
   font-size: 0.9rem;
 }
- 
+
 header nav a:hover {
   text-decoration: underline;
 }
- 
+
 .duck-ai {
   display: flex;
   align-items: center;
   gap: 0.35rem;
 }
- 
+
 .duck-ai img {
   width: 16px;
   height: 16px;
 }
- 
+
 header nav button {
   background: none;
   border: none;
   cursor: pointer;
   padding: 0.25rem;
 }
- 
+
 header nav button img {
   width: 24px;
   height: 24px;
@@ -149,21 +149,21 @@ header nav button img {
   padding: var(--espaco-secao) 1rem;
   text-align: center;
 }
- 
+
 .apresentacao h1 img {
   display: inline-block;
   width: 24px;
   height: 24px;
   vertical-align: middle;
 }
- 
+
 .cards {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 2rem;
 }
- 
+
 .cards article {
   background-color: var(--cor-card);
   border: 1px solid var(--cor-borda);
@@ -172,13 +172,13 @@ header nav button img {
   text-align: left;
   flex: 1;
 }
- 
+
 .cards img {
   width: 64px;
   height: 64px;
   margin-bottom: 1rem;
 }
- 
+
 .selo {
   display: inline-block;
   background-color: var(--cor-selo);
@@ -189,7 +189,7 @@ header nav button img {
   border-radius: 999px;
   margin-bottom: 1rem;
 }
- 
+
 .botao {
   display: inline-block;
   background-color: var(--cor-botao-secundario);
@@ -199,11 +199,11 @@ header nav button img {
   border-radius: var(--raio-borda);
   font-weight: bold;
 }
- 
+
 .botao:hover {
   filter: brightness(1.1);
 }
- 
+
 .botao-destaque {
   background-color: var(--cor-botao);
   color: var(--cor-botao-texto);
@@ -214,25 +214,25 @@ header nav button img {
   max-width: 40rem;
   margin: 0 auto;
 }
- 
+
 .desenvolvedor form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 1.5rem;
 }
- 
+
 .desenvolvedor form div {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
 }
- 
+
 .desenvolvedor label {
   font-size: 0.9rem;
   font-weight: bold;
 }
- 
+
 .desenvolvedor input,
 .desenvolvedor textarea {
   background-color: var(--cor-campo);
@@ -243,7 +243,7 @@ header nav button img {
   font-family: inherit;
   font-size: 1rem;
 }
- 
+
 .desenvolvedor button[type="submit"] {
   align-self: flex-start;
   background-color: var(--cor-botao);
@@ -254,14 +254,11 @@ header nav button img {
   font-weight: bold;
   cursor: pointer;
 }
- 
+
 .desenvolvedor button[type="submit"]:hover {
   filter: brightness(1.1);
 }
- 
-/* ==========================================================
-   Rodapé
-   ========================================================== */
+
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -269,4 +266,17 @@ footer {
   font-size: 0.85rem;
   color: var(--cor-texto-suave);
 }
- 
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+}
