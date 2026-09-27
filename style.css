@@ -81,3 +81,66 @@ textarea:focus-visible {
   outline: 3px solid var(--cor-foco);
   outline-offset: 2px;
 }
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--cor-borda);
+}
+ 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+ 
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+ 
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+ 
+header nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+ 
+header nav a:hover {
+  text-decoration: underline;
+}
+ 
+.duck-ai {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+ 
+.duck-ai img {
+  width: 16px;
+  height: 16px;
+}
+ 
+header nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+ 
+header nav button img {
+  width: 24px;
+  height: 24px;
+}
