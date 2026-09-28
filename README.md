@@ -91,3 +91,10 @@ Preenchidos os links (href) que ainda estavam como #: o logo e o link "Duck.ai" 
 Aumentado o ícone do menu de 24px para 32px (header nav button img).
 Ajustada a paleta de cores para reduzir o desconforto de sair do clone (tons terrosos quentes) para o site real (tons escuros mais neutros/frios) ao clicar nos links: o fundo geral da página (--cor-fundo) passou de Coffee para River Pine, um tom mais frio dentro da mesma paleta já escolhida — sem copiar as cores originais do DuckDuckGo, mantendo a personalização exigida.
 Como consequência dessa troca, o texto secundário do rodapé perderia contraste suficiente sobre o novo fundo; por isso o rodapé passou a ter fundo próprio (Maroon, a mesma cor dos cards), mantendo a legibilidade dentro do recomendado pelas diretrizes de contraste (WCAG).
+
+Referência:
+![Imagem do projeto](referência.png)
+
+Como ficou o trabalho:
+![Imagem do projeto](trabalho1.png)
+![Imagem do projeto](trabalho2.png)
